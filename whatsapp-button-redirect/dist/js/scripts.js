@@ -17,12 +17,9 @@ var whatsBtnConfig = {
   text: "Quero saber como agendar um show com a Banda Electric Grave?",
 };
 
-
-
 function showBoxWhatsAuto() {
   if (!boxWhatsShowFirst) {
     timeOutSlideLeftBoxWhats = setTimeout(() => {
-      slideLeftBoxWhats();
       boxWhatsShowFirst = true;
     }, 10000);
   }
@@ -107,9 +104,7 @@ function init() {
 
     document
       .querySelector(".whats-fixed-icon")
-      .addEventListener("mouseover", function () {
-        slideLeftBoxWhats();
-      });
+      .addEventListener("mouseover", function () {});
 
     document
       .querySelector(".box-whats-header-close")
